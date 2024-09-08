@@ -1,8 +1,15 @@
 <div class="container">
   <div class="progress-steps">
-    <div class="step active">01</div>
-    <div class="step">02</div>
-    <div class="step">03</div>
+    <img src="/Step1.svg" alt="" />
+    <img src="/LineRed.svg" alt="" />
+    <img src="/Step2Grey.svg" alt="" />
+    <img src="/LineGrey.svg" alt="" />
+    <img src="/Step3Grey.svg" alt="" />
+  </div>
+  <div class="progress-steps gap-5">
+    <p class="fw-bold">Amount</p>
+    <p>confirmation</p>
+    <p>Payement</p>
   </div>
   <h2>How much are you sending?</h2>
   <form (ngSubmit)="onSubmit()">
@@ -39,6 +46,6 @@
         required
       />
     </div>
-    <button type="submit" class="btn btn-danger">Continue</button>
+    <button type="submit" class="btn">Continue</button>
   </form>
 </div>

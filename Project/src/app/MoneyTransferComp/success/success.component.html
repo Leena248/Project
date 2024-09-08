@@ -3,31 +3,34 @@
     <img src="/Step1.svg" alt="" />
     <img src="/LineRed.svg" alt="" />
     <img src="/Step2Red.svg" alt="" />
-    <img src="/LineGrey.svg" alt="" />
-    <img src="/Step3Grey.svg" alt="" />
+    <img src="/LineRed.svg" alt="" />
+    <img src="/Step3Red.svg" alt="" />
   </div>
   <div class="progress-steps gap-5">
     <p class="fw-bold">Amount</p>
     <p class="fw-bold">confirmation</p>
-    <p>Payement</p>
+    <p class="fw-bold">Payement</p>
   </div>
-  <h2>Confirm your details</h2>
+  <img src="/success.png" alt="Check image" />
+  <h2>Your transfer was successful!</h2>
+  <p>1000EGP</p>
   <div class="card">
     <div class="card-body">
       <h5>From</h5>
-      <p>{{ senderName }}</p>
-      <p>{{ senderAccount }}</p>
+      <p>senderName</p>
+      <p>senderAccount</p>
     </div>
   </div>
   <img class="my-2" src="/backAndForthArrow.png" alt="backAndForthArrow" />
   <div class="card">
     <div class="card-body">
       <h5>To</h5>
-      <p>{{ recipientName }}</p>
-      <p>{{ recipientAccount }}</p>
+      <p>recipientName</p>
+      <p>recipientAccount</p>
     </div>
   </div>
-  <p>Total amount: {{ amount }} EGP</p>
-  <button class="btn" (click)="onConfirm()">Confirm</button>
-  <button class="btn btn-outline-secondary" (click)="onBack()">Back</button>
+  <P>Transfer amount: </P>
+  <p>Amount</p>
+  <button class="btn">Back To Home</button>
+  <button class="btn btn-outline-secondary">Favorites</button>
 </div>

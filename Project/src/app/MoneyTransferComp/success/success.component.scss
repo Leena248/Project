@@ -9,22 +9,6 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
-
-  .step {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: white;
-
-    &.active {
-      background-color: #d9534f;
-    }
-  }
 }
 
 h2 {
@@ -32,13 +16,19 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.form-group {
+.card {
   margin-bottom: 1.5rem;
+  text-align: left;
+
+  .card-body {
+    padding: 1rem;
+  }
 }
 
 .btn {
   width: 100%;
   padding: 0.75rem;
+  margin-bottom: 1rem;
   background-color: #871e35;
   color: white;
 }
