@@ -1,0 +1,52 @@
+.container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  .step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+
+    &.active {
+      background-color: #d9534f;
+    }
+
+    &.completed {
+      background-color: #5cb85c;
+    }
+  }
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+  text-align: left;
+
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}

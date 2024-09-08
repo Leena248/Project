@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="progress-steps">
+    <div class="step completed">01</div>
+    <div class="step active">02</div>
+    <div class="step">03</div>
+  </div>
+  <h2>Confirm your details</h2>
+  <div class="card">
+    <div class="card-body">
+      <h5>From</h5>
+      <p>{{ senderName }}</p>
+      <p>{{ senderAccount }}</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5>To</h5>
+      <p>{{ recipientName }}</p>
+      <p>{{ recipientAccount }}</p>
+    </div>
+  </div>
+  <p>Total amount: {{ amount }} EGP</p>
+  <button class="btn btn-danger" (click)="onConfirm()">Confirm</button>
+  <button class="btn btn-outline-secondary" (click)="onBack()">Back</button>
+</div>

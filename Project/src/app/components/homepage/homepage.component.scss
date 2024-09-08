@@ -1,0 +1,90 @@
+.custom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("/homepage.png");
+  background-size: 100%;
+  background-position: center;
+  padding: 50px;
+
+  .content {
+    max-width: 50%;
+    h2 {
+      font-family: Inter, sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .description {
+      color: #ffffff;
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .create-account-btn {
+      background-color: #871e35;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: Inter, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+
+  .form-container {
+    max-width: 40%;
+
+    .form-group {
+      margin-bottom: 15px;
+      label {
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+      }
+    }
+
+    .delivery-time {
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .continue-btn {
+      background-color: #871e35;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-family: Inter, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .terms {
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+  }
+}
