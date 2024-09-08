@@ -12,6 +12,4 @@ import { MobileSectionComponent } from '../components/mobile-section/mobile-sect
 })
 export class MyAccountComponent {
   constructor() {}
-
-  ngOnInit(): void {}
 }
