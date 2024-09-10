@@ -1,0 +1,50 @@
+/
+
+body .Login_Form {
+    background-color: #f5f5f5; /* Light grey background for the entire page */
+    font-family: Arial, sans-serif;
+  }
+  
+  .container .Login_Form {    
+    background-color: white; /* White background for the form container */
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
+    padding: 40px;
+    margin-top: 100px;
+  }
+  
+  h2 .Login_Form {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+  }
+   
+  .form-label  .Login_Form{
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .form-control .Login_Form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  button  .Login_Form {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .nav-btn .Login_Form {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  
+    &:hover .Login_Form {
+      background-color: #0056b3;
+      color: white;
+    }
+  }
+  
