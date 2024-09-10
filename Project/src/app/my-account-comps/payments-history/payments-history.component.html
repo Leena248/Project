@@ -1,1 +1,24 @@
-<p>payments-history works!</p>
+<div class="paymentHistory">
+  <h2>Payment History</h2>
+  <div class="previousPayment data">
+    <p class="align-middle">
+      Account Number: <span>{{ accountNumber }}</span>
+    </p>
+    <span class="leftaligner">
+      <button class="btn"></button>
+    </span>
+  </div>
+  <div class="paymentDetails">
+    <div class="accounDetails">
+      <p>Account Details</p>
+      <p class="recipientName">Recipient Name</p>
+    </div>
+    <div class="accountValues">
+      <p class="text-right">
+        Total Price: <span>{{ totalPrice }}</span
+        >EGP
+      </p>
+      <p class="recipientName text-right">{{ recipientName }}</p>
+    </div>
+  </div>
+</div>

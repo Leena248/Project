@@ -1,7 +1,7 @@
 .container {
   max-width: 500px;
   margin: auto;
-  text-align: center;
+  text-align: left;
   padding: 2rem;
 }
 
@@ -9,22 +9,6 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
-
-  .step {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: white;
-
-    &.active {
-      background-color: #d9534f;
-    }
-  }
 }
 
 h2 {

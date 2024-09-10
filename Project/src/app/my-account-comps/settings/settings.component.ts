@@ -5,8 +5,12 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './settings.component.html',
-  styleUrl: './settings.component.scss'
+  styleUrl: './settings.component.scss',
 })
 export class SettingsComponent {
-
+  name: string = 'Johnathon';
+  country: string = 'UK';
+  phone!: number;
+  email!: string;
+  onSubmit() {}
 }

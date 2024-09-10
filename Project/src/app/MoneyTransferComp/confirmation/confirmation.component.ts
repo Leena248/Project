@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -14,6 +14,12 @@ export class ConfirmationComponent {
   recipientAccount!: string;
   senderName: string = 'John Doe';
   senderAccount: string = 'xxxx7890';
+
+  @Output() newStateEvent: EventEmitter<string> = new EventEmitter<string>();
+
+  changeNewState(value: string) {
+    this.newStateEvent.emit(value);
+  }
 
   constructor(private router: Router) {}
 

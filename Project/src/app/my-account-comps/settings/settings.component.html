@@ -1,1 +1,28 @@
-<p>settings works!</p>
+<div class="profile">
+  <h2>Settings</h2>
+  <div class="d-flex gap-4">
+    <h2 class="profileWord">Profile</h2>
+    <h2 class="changePassword">Change Password</h2>
+  </div>
+  <form onsubmit="onSubmit">
+    <div class="form-group">
+      <label class="text-left" for="fullName">Full Name</label>
+      <input type="text" id="fullName" class="form-control" name="fullName" />
+    </div>
+    <div class="form-group">
+      <label class="text-left" for="country">Country</label>
+      <input type="text" id="country" class="form-control" name="country" />
+    </div>
+    <div class="flex btnNextToEachOther">
+      <div class="form-group">
+        <label class="text-left" for="Phone">Phone</label>
+        <input id="Phone" class="form-control" name="Phone" />
+      </div>
+      <div class="form-group">
+        <label class="text-left" for="Email">Email</label>
+        <input type="email" id="Email" class="form-control" name="Email" />
+      </div>
+    </div>
+    <button class="btn mt-4" type="submit">Update Profile</button>
+  </form>
+</div>

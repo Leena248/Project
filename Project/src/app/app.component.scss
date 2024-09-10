@@ -1,8 +1,5 @@
 @import "bootstrap/scss/bootstrap-grid";
-// Add as many as you need
-// @import "bootstrap/scss/XXXX";
 
-// Your custom styles
 html,
 body {
   height: 100%;
@@ -10,4 +7,12 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+button {
+  background-color: #871e35;
+}
+.divtest {
+  width: 1248px;
+  height: 500px;
+  background-color: black;
 }

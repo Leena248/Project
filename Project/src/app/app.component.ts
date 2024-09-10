@@ -4,6 +4,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { MoneyTransferComponent } from './money-transfer/money-transfer.component';
 import { MyAccountComponent } from './my-account/my-account.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,8 @@ import { MyAccountComponent } from './my-account/my-account.component';
     HomeComponent,
     MoneyTransferComponent,
     MyAccountComponent,
+    NavbarComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

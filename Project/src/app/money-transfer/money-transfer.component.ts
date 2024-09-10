@@ -22,4 +22,9 @@ import { SuccessComponent } from '../MoneyTransferComp/success/success.component
   templateUrl: './money-transfer.component.html',
   styleUrl: './money-transfer.component.scss',
 })
-export class MoneyTransferComponent {}
+export class MoneyTransferComponent {
+  state: string = 'amount';
+  changeState(value: string) {
+    this.state = value;
+  }
+}
