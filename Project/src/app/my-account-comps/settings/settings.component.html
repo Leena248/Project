@@ -7,22 +7,47 @@
   <form onsubmit="onSubmit">
     <div class="form-group">
       <label class="text-left" for="fullName">Full Name</label>
-      <input type="text" id="fullName" class="form-control" name="fullName" />
+      <input
+        type="text"
+        id="fullName"
+        class="form-control"
+        name="fullName"
+        [(ngModel)]="name"
+      />
     </div>
     <div class="form-group">
       <label class="text-left" for="country">Country</label>
-      <input type="text" id="country" class="form-control" name="country" />
+      <input
+        type="text"
+        id="country"
+        class="form-control"
+        name="country"
+        [(ngModel)]="country"
+      />
     </div>
     <div class="flex btnNextToEachOther">
       <div class="form-group">
         <label class="text-left" for="Phone">Phone</label>
-        <input id="Phone" class="form-control" name="Phone" />
+        <input
+          id="Phone"
+          class="form-control"
+          name="Phone"
+          [(ngModel)]="phone"
+        />
       </div>
       <div class="form-group">
         <label class="text-left" for="Email">Email</label>
-        <input type="email" id="Email" class="form-control" name="Email" />
+        <input
+          type="email"
+          id="Email"
+          class="form-control"
+          name="Email"
+          [(ngModel)]="email"
+        />
       </div>
     </div>
-    <button class="btn mt-4" type="submit">Update Profile</button>
+    <button (click)="onSubmit()" class="btn mt-4" type="submit">
+      Update Profile
+    </button>
   </form>
 </div>

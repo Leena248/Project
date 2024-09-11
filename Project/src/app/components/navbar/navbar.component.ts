@@ -9,6 +9,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
-  loggedIn: boolean = true;
+  loggedIn: boolean = false;
   UserName: string = 'Johnathon Doe';
 }

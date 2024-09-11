@@ -8,6 +8,18 @@
   text-align: left;
   background: #24221e;
 }
+.h2 {
+  width: 117px;
+  height: 36px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  color: #24221e;
+}
 .balance {
   font-family: Inter;
   font-size: 64px;
@@ -69,6 +81,6 @@
   border: 1px solid #e3e2e2;
   width: Hug (462px) px;
   height: Hug (420px) px;
-  padding: 32px 0px 0px 0px;
+  padding: 10px 0px 0px 10px;
   gap: 32px;
 }

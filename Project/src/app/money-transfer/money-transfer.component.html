@@ -2,9 +2,20 @@
 <!-- <button (click)="changeState()">Change state</button> -->
 
 @switch (state){ @case("amount") {
-<app-amount (newStateEvent)="changeState($event)"></app-amount>
+<app-amount
+  (stateEvent)="changeState($event)"
+  (amountEvent)="changeAmount($event)"
+  (recipientNameEvent)="changeRecipientName($event)"
+  (recipientAccountEvent)="changeRecipientAccount($event)"
+></app-amount>
 } @case("confirmation") {
-<app-confirmation (newStateEvent)="changeState($event)"></app-confirmation>
+<app-confirmation
+  (makeTransferEvent)="makeTransfer($event)"
+  [recipientName]="recipientName"
+  [recipientAccount]="recipientAccount"
+  [senderAccount]="senderAccount"
+  [senderName]="senderName"
+></app-confirmation>
 
 } @case("success") {
 <app-success></app-success>

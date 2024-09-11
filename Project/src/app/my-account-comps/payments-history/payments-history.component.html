@@ -1,24 +1,28 @@
 <div class="paymentHistory">
   <h2>Payment History</h2>
-  <div class="previousPayment data">
-    <p class="align-middle">
-      Account Number: <span>{{ accountNumber }}</span>
-    </p>
-    <span class="leftaligner">
-      <button class="btn"></button>
-    </span>
-  </div>
-  <div class="paymentDetails">
-    <div class="accounDetails">
-      <p>Account Details</p>
-      <p class="recipientName">Recipient Name</p>
-    </div>
-    <div class="accountValues">
-      <p class="text-right">
-        Total Price: <span>{{ totalPrice }}</span
-        >EGP
+  <div *ngFor="let transaction of transactions">
+    <div class="previousPayment data">
+      <p class="align-middle">
+        Account Number: <span>{{ transaction.senderAccountNumber }}</span>
       </p>
-      <p class="recipientName text-right">{{ recipientName }}</p>
+      <span class="leftaligner">
+        <button class="btn"></button>
+      </span>
+    </div>
+    <div class="paymentDetails">
+      <div class="accounDetails">
+        <p>Account Details</p>
+        <p class="recipientName">Recipient Name</p>
+      </div>
+      <div class="accountValues">
+        <p class="text-right">
+          Total Price: <span>{{ transaction.amountTransferred }}</span
+          >EGP
+        </p>
+        <p class="recipientName text-right">
+          {{ transaction.recieverAccountName }}
+        </p>
+      </div>
     </div>
   </div>
 </div>
