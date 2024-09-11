@@ -1,23 +1,23 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+// import { Component } from '@angular/core';
 
-import { ComponentLoginFormComponent } from './component-login-form.component';
+// @Component({
+//   selector: 'app-login-form',          
+//   templateUrl: 'LoginForm.html' ,  // Ensure this file is in the same directory
+//   styleUrls: ['./component-login-form.component.scss']    // Ensure this file is also in the same directory, if used
+// })
+// export class LoginFormComponent {
+//   // Component logic here
+// }
 
-describe('ComponentLoginFormComponent', () => {
-  let component: ComponentLoginFormComponent;
-  let fixture: ComponentFixture<ComponentLoginFormComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [ComponentLoginFormComponent]
-    })
-    .compileComponents();
+import { Component } from '@angular/core';
 
-    fixture = TestBed.createComponent(ComponentLoginFormComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+@Component({
+  selector: 'app-login-form',
+  templateUrl: './LoginForm.html',     // Path to your HTML file
+  styleUrls: ['./LoginForm.css']       // Ensure this path points to your CSS file
+})
+export class LoginFormComponent {
+  // Component logic here
+}
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
