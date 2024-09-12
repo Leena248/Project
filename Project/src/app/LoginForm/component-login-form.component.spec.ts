@@ -15,9 +15,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-login-form',
   templateUrl: './LoginForm.html',     // Path to your HTML file
-  styleUrls: ['./LoginForm.css']       // Ensure this path points to your CSS file
+  styleUrls: ['./component-login-form.component.scss']       // Ensure this path points to your CSS file
 })
 export class LoginFormComponent {
   // Component logic here
 }
 
+S
