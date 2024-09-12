@@ -1,5 +1,7 @@
 This project is part of my internship at BM, I am part of Group F. This is the frontend implementation of a website that allows users to check their account balance, update personal information, and transfer money. The project is built using Angular 18 with Bootstrap and SCSS for styling.
 
+Deployed link: https://ambitious-ground-01f132700.5.azurestaticapps.net/
+
 Features
 Check Balance: Users can log in and view their current balance.
 Update Information: Users can update personal information such as their name, email, country, and phone number.
