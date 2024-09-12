@@ -1,7 +1,7 @@
 .container {
   max-width: 500px;
   margin: auto;
-  text-align: center;
+  text-align: left;
   padding: 2rem;
 }
 
@@ -9,24 +9,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
-
-  .step {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: white;
-
-    &.active {
-      background-color: #d9534f;
-    }
-  }
 }
-
+.faves {
+  color: #871e35;
+}
 h2 {
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -41,4 +27,56 @@ h2 {
   padding: 0.75rem;
   background-color: #871e35;
   color: white;
+}
+.fav-list-popup {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.favorites-list-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.fav-list-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.modal-body {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.bank-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+}
+
+.bank-icon-img {
+  width: 20px;
+  height: 20px;
+}
+
+.recep-name {
+  font-weight: 600;
+  color: #3c3a37;
+}
+
+.body-regular {
+  color: #898886;
+}
+
+.btn-close {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
 }

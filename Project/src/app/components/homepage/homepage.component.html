@@ -12,9 +12,15 @@
       Fast, secure, and affordable international money transfers. Get started in
       minutes
     </p>
-    <button class="create-account-btn">Create Account</button>
+    <button class="create-account-btn">{{ ButtonContent }}</button>
   </div>
   <div class="form-container bg-white p-4 px-5 rounded-3">
+    @if(LoggedIn){
+    <div class="balance d-flex flex-column">
+      <small class="body-medium balance-text">Current Balance</small>
+      <small class="balance-amount">10000EGP</small>
+    </div>
+    }
     <form>
       <div class="form-group">
         <label for="send-amount">Send amount</label>

@@ -7,7 +7,28 @@
   background-position: center;
   padding: 50px;
   height: 100vh;
-
+  .balance {
+    width: 417px;
+    height: 90px;
+    padding: 8px 16px 8px 16px;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: #f3e9eb;
+    .balance-text {
+      width: 385px;
+      height: 24px;
+      color: #521220;
+    }
+    .balance-amount {
+      width: 145px;
+      height: 42px;
+      font-family: Inter;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 42px;
+      color: #871e35;
+    }
+  }
   .content {
     max-width: 50%;
     h2 {

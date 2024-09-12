@@ -1,0 +1,46 @@
+<section class="MoneyTransferSection px-4">
+  <div>
+    <h2>My Account</h2>
+    <ul class="inline-list info ms-3">
+      <li>Home</li>
+      <li><span class="myAccount">My Account</span></li>
+    </ul>
+  </div>
+  <div>
+    <img src="/MoneyTransfer2.svg" alt="Image of wallet" />
+  </div>
+</section>
+
+<section class="containerMine my-5 mx-4">
+  <div
+    class="btn-group-vertical border border-dark-subtle"
+    role="group"
+    aria-label="Vertical button group"
+  >
+    <button (click)="changeState('profile')" type="button" class="btn">
+      My Profile
+    </button>
+    <button (click)="changeState('PayementHistory')" type="button" class="btn">
+      Payment History
+    </button>
+    <button (click)="changeState('Settings')" type="button" class="btn">
+      Settings
+    </button>
+    <button (click)="changeState('ChangePassword')" type="button" class="btn">
+      Change Password
+    </button>
+  </div>
+  <div class="infoSection">
+    @switch (state){ @case("profile") {
+    <app-my-profile></app-my-profile>
+    } @case("PayementHistory") {
+    <app-payments-history></app-payments-history>
+
+    } @case("Settings") {
+    <app-settings></app-settings>
+    } @case("ChangePassword") {
+    <app-change-password></app-change-password>
+    } }
+  </div>
+</section>
+<app-mobile-section></app-mobile-section>

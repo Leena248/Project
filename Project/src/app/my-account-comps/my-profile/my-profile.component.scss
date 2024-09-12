@@ -1,0 +1,86 @@
+.h1 {
+  width: 117px;
+  height: 36px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  background: #24221e;
+}
+.h2 {
+  width: 117px;
+  height: 36px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  color: #24221e;
+}
+.balance {
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 96px;
+  text-align: left;
+  color: #24221e;
+}
+.balance-text {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+  color: #5f1525;
+}
+.variables {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.data {
+  margin-left: 20px;
+  color: #6e6d6b;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.profile-details {
+  .data {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px; // Adjust margin as needed
+  }
+
+  .variables {
+    width: 150px;
+    font-weight: bold;
+  }
+
+  .value {
+    margin-left: 10px;
+  }
+}
+.profile {
+  width: Fixed (1, 243px) px;
+  height: Hug (718px) px;
+  top: 562px;
+  left: 96px;
+  gap: 32px;
+  border: 1px 0px 0px 0px;
+  border: 1px solid #e3e2e2;
+  width: Hug (462px) px;
+  height: Hug (420px) px;
+  padding: 10px 0px 0px 10px;
+  gap: 32px;
+}

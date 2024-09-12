@@ -1,7 +1,23 @@
-<app-navbar></app-navbar>
 <app-money-transfer-intro-section></app-money-transfer-intro-section>
-<app-amount></app-amount>
-<app-confirmation></app-confirmation>
+<!-- <button (click)="changeState()">Change state</button> -->
+
+@switch (state){ @case("amount") {
+<app-amount
+  (stateEvent)="changeState($event)"
+  (amountEvent)="changeAmount($event)"
+  (recipientNameEvent)="changeRecipientName($event)"
+  (recipientAccountEvent)="changeRecipientAccount($event)"
+></app-amount>
+} @case("confirmation") {
+<app-confirmation
+  (makeTransferEvent)="makeTransfer($event)"
+  [recipientName]="recipientName"
+  [recipientAccount]="recipientAccount"
+  [senderAccount]="senderAccount"
+  [senderName]="senderName"
+></app-confirmation>
+
+} @case("success") {
 <app-success></app-success>
+} }
 <app-mobile-section></app-mobile-section>
-<app-footer></app-footer>

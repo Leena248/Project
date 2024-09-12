@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,19 +10,23 @@ import { Router } from '@angular/router';
 })
 export class ConfirmationComponent {
   amount!: number;
-  recipientName!: string;
-  recipientAccount!: string;
-  senderName: string = 'John Doe';
-  senderAccount: string = 'xxxx7890';
+  // recipientName!: string;
+  // recipientAccount!: string;
+  // senderName: string = 'John Doe';
+  // senderAccount: string = 'xxxx7890';
+
+  @Input() recipientName!: string;
+  @Input() recipientAccount!: string;
+  @Input() senderAccount!: string;
+  @Input() senderName!: string;
+
+  @Output() makeTransferEvent: EventEmitter<any> = new EventEmitter();
+
+  makeTransfer() {
+    this.makeTransferEvent.emit();
+  }
 
   constructor(private router: Router) {}
-
-  ngOnInit() {
-    const state = history.state;
-    this.amount = state.amount;
-    this.recipientName = state.recipientName;
-    this.recipientAccount = state.recipientAccount;
-  }
 
   onConfirm() {
     this.router.navigate(['/payment'], {

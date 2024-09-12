@@ -9,7 +9,7 @@
   <div class="progress-steps gap-5">
     <p class="fw-bold">Amount</p>
     <p class="fw-bold">confirmation</p>
-    <p>Payement</p>
+    <p>Payment</p>
   </div>
   <h2>Confirm your details</h2>
   <div class="card">
@@ -28,6 +28,8 @@
     </div>
   </div>
   <p>Total amount: {{ amount }} EGP</p>
-  <button class="btn" (click)="onConfirm()">Confirm</button>
-  <button class="btn btn-outline-secondary" (click)="onBack()">Back</button>
+  <button class="btn" (click)="makeTransfer()">Confirm</button>
+  <button class="btn btn-outline-secondary" (click)="changeNewState('amount')">
+    Back
+  </button>
 </div>
