@@ -2,6 +2,7 @@ import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
+import { Component } from '@angular/core';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]
@@ -9,15 +10,12 @@ export const appConfig: ApplicationConfig = {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-import { Component } from '@angular/core';
-import { LoginFormComponent } from './path-to-login-form/login-form.component';
 
 @Component({
   selector: 'app-parent',
   standalone: true,
-  imports:  [LoginFormComponent],
-    templateUrl: './LoginForm.html',
-  styleUrls: ['./parent.component.css']
+    templateUrl: './app.component.html' ,
+  styleUrls: ['./app.component.scss']
 })
 export class ParentComponent {}
 
