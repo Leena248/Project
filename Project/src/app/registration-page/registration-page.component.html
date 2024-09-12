@@ -1,0 +1,105 @@
+<div class="registration-container">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="fullName">Full name</label>
+      <input
+        id="fullName"
+        type="text"
+        class="form-control"
+        name="fullName"
+        [(ngModel)]="fullName"
+        placeholder="Full name"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        class="form-control"
+        name="email"
+        [(ngModel)]="email"
+        placeholder="Email address"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="country">Country</label>
+      <select
+        id="country"
+        class="form-control"
+        name="country"
+        [(ngModel)]="country"
+        required
+      >
+        <option value="UK">UK</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Date of birth</label>
+      <div class="d-flex">
+        <input
+          type="text"
+          class="form-control"
+          name="day"
+          [(ngModel)]="day"
+          placeholder="DD"
+          style="width: 33%"
+          required
+        />
+        <input
+          type="text"
+          class="form-control"
+          name="month"
+          [(ngModel)]="month"
+          placeholder="MM"
+          style="width: 33%"
+          required
+        />
+        <input
+          type="text"
+          class="form-control"
+          name="year"
+          [(ngModel)]="year"
+          placeholder="YYYY"
+          style="width: 33%"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        class="form-control"
+        name="password"
+        [(ngModel)]="password"
+        placeholder="Password"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirm password</label>
+      <input
+        id="confirmPassword"
+        type="password"
+        class="form-control"
+        name="confirmPassword"
+        [(ngModel)]="confirmPassword"
+        placeholder="Confirm password"
+        required
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block mt-3">
+      Create Account
+    </button>
+  </form>
+</div>

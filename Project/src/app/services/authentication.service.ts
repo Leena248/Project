@@ -32,11 +32,18 @@ export class AuthenticationService {
     dateOfBirth: string,
     phoneNumber: string
   ) {
-    const body = { email, password };
-    return this.http.post(`${this.apiUrl}/register`, this.getHeaders());
+    const body = {
+      name,
+      email,
+      password,
+      country,
+      dateOfBirth,
+      phoneNumber,
+    };
+    return this.http.post(`${this.apiUrl}/register`, body);
   }
   logoutUser() {
-    return this.http.post(`${this.apiUrl}/logout`, this.getHeaders());
+    return this.http.post(`${this.apiUrl}/logout`, {}, this.getHeaders());
   }
   loginUser(email: string, password: string) {
     const body = { email, password };

@@ -18,12 +18,6 @@ export class CustomerService {
   getUserInfo() {
     return this.http.get(`${this.apiUrl}/info`, this.getHeaders());
   }
-  getTransactions(accountNummber: string) {
-    return this.http.get(
-      `https://money-transfer-service.onrender.com/api/v1/account/${accountNummber}/transactions`,
-      this.getHeaders()
-    );
-  }
   updateUserInfo(
     name: string,
     email: string,

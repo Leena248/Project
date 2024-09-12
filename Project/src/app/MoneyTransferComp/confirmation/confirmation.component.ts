@@ -20,10 +20,15 @@ export class ConfirmationComponent {
   @Input() senderAccount!: string;
   @Input() senderName!: string;
 
+  @Output() stateEvent: EventEmitter<string> = new EventEmitter<string>();
   @Output() makeTransferEvent: EventEmitter<any> = new EventEmitter();
 
   makeTransfer() {
     this.makeTransferEvent.emit();
+  }
+
+  changeStateEvent(value: string) {
+    this.stateEvent.emit(value);
   }
 
   constructor(private router: Router) {}

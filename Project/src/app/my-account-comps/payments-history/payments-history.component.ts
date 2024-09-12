@@ -28,44 +28,45 @@ export class PaymentsHistoryComponent {
         console.log('an:', accountNummber);
 
         this.accountService.getTransactions(accountNummber).subscribe({
-          next: (response) => {
+          next: (response: any) => {
             console.log('response:', response);
+            this.transactions = response.transactionsForAccount;
           },
           // (error) => {console.error('Error:', error)}
         });
       },
     });
 
-    const response = {
-      transactionsForAccount: [
-        {
-          id: 0,
-          senderName: 'string',
-          senderAccountNumber: 'string',
-          currency: 'EGP',
-          recieverAccountNumber: 'string',
-          recieverAccountName: 'string',
-          amountTransferred: 0,
-          createdAt: '2024-09-11T19:09:05.449Z',
-        },
-        {
-          id: 0,
-          senderName: 'string',
-          senderAccountNumber: 'string',
-          currency: 'EGP',
-          recieverAccountNumber: 'string',
-          recieverAccountName: 'string',
-          amountTransferred: 0,
-          createdAt: '2024-09-11T19:09:05.449Z',
-        },
-      ],
-      pageNumber: 0,
-      pageSize: 0,
-      totalElement: 0,
-      totalPages: 0,
-      isLast: true,
-    };
-    this.transactions = response.transactionsForAccount;
+    // const response = {
+    //   transactionsForAccount: [
+    //     {
+    //       id: 0,
+    //       senderName: 'string',
+    //       senderAccountNumber: 'string',
+    //       currency: 'EGP',
+    //       recieverAccountNumber: 'string',
+    //       recieverAccountName: 'string',
+    //       amountTransferred: 0,
+    //       createdAt: '2024-09-11T19:09:05.449Z',
+    //     },
+    //     {
+    //       id: 0,
+    //       senderName: 'string',
+    //       senderAccountNumber: 'string',
+    //       currency: 'EGP',
+    //       recieverAccountNumber: 'string',
+    //       recieverAccountName: 'string',
+    //       amountTransferred: 0,
+    //       createdAt: '2024-09-11T19:09:05.449Z',
+    //     },
+    //   ],
+    //   pageNumber: 0,
+    //   pageSize: 0,
+    //   totalElement: 0,
+    //   totalPages: 0,
+    //   isLast: true,
+    // };
+    // this.transactions = response.transactionsForAccount;
     console.log(this.transactions);
   }
 }

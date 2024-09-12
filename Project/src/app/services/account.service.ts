@@ -7,7 +7,7 @@ export class AccountService {
   private apiUrl = 'https://money-transfer-service.onrender.com/api/v1/account';
   private token: string | null;
   getHeaders() {
-    return { headers: { Authorization: `bearer ${this.token}` } };
+    return { headers: { Authorization: `Bearer ${this.token}` } };
   }
   constructor(private http: HttpClient) {
     this.token = localStorage.getItem('token');

@@ -28,6 +28,7 @@ export class SettingsComponent {
       )
       .subscribe({
         next: (response) => {
+          window.location.reload();
           console.log('response:', response);
         },
         // (error) => {console.error('Error:', error)}
